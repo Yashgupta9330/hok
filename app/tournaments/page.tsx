@@ -10,12 +10,12 @@ export default function Tournaments() {
   const [filter, setFilter] = useState<'all' | 'Upcoming' | 'Completed'>('all');
   const [search, setSearch] = useState('');
   const [tournaments, setTournaments] = useState<Tournament[]>([]);
-
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
   useEffect(() => {
     // Fetch the tournaments from the API
     async function fetchTournaments() {
       try {
-        const response = await fetch('http://localhost:8080/api/tournaments');
+        const response = await fetch(`${API_URL}/tournaments`);
         const data = await response.json();
         setTournaments(data);
       } catch (error) {
