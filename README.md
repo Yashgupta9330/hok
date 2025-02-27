@@ -1,9 +1,9 @@
-# Echo Chat
+# Gamerhok
 
-A web application that allows users to log in, do chat.
+A web application that allows users get Tournament Information.
 
 ## Tech Stack
-- React.js
+- Next.js
 - Shadcn
 - ts
 - Tailwind CSS for styling
@@ -17,8 +17,8 @@ A web application that allows users to log in, do chat.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Yashgupta9330/Echo_chat_frontend
-cd Echo_chat_frontend
+git clone https://github.com/Yashgupta9330/hok
+cd hok
 ```
 2. Install  dependencies:
 ```bash
@@ -31,4 +31,4 @@ npm install
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
+The application will be available at `http://localhost:3000`
